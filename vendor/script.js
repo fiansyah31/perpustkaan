@@ -106,7 +106,7 @@ function SearchLiveBuku() {
                         resultBuku += "<td>" + buku.judul + "</td>";
                         resultBuku += "<td>" + buku.tahun_terbit + "</td>";
                         resultBuku += "<td>" + buku.penulis + "</td>";
-                        resultBuku += "<td><a class='btn btn-warning py-2 px-3' id='editBuku' data-id='"+buku.id_buku+"' data-bs-toggle='modal' data-bs-target='#modalEditBuku' href='index.php?halaman=edit_buku?id=" + buku.id_buku + "'>Edit</a> | <a class='btn btn-info py-2 px-3' href='index.php?halaman=edit_buku?id=" + buku.id_buku + "'>Lihat</a></td>";
+                        resultBuku += "<td><a class='btn btn-warning py-2 px-3' id='editBuku' data-id='"+buku.id_buku+"' data-bs-toggle='modal' data-bs-target='#modalEditBuku' href='index.php?halaman=edit_buku?id=" + buku.id_buku + "'>Edit</a> | <a class='btn btn-info py-2 px-3' id='lihatBuku' data-id='"+buku.id_buku+"' data-bs-toggle='modal' data-bs-target='#modalLihatBuku' href='index.php?halaman=edit_buku?id=" + buku.id_buku + "'>Lihat</a></td>";
                         resultBuku += "</tr>";
                     });
                     $("#table-buku tbody").html(resultBuku);
@@ -161,7 +161,7 @@ function filterTahun(){
                         hasilBuku += "<td>" + bukus.judul + "</td>";
                         hasilBuku += "<td>" + bukus.tahun_terbit + "</td>";
                         hasilBuku += "<td>" + bukus.penulis + "</td>";
-                        hasilBuku += "<td><a class='btn btn-warning py-2 px-3 editBuku' id='editBuku' data-id='"+bukus.id_buku+"' data-bs-toggle='modal' data-bs-target='#modalEditBuku' href='index.php?halaman=edit_buku?id=" + bukus.id_buku + "'>Edit</a> | <a class='btn btn-info py-2 px-3' href='index.php?halaman=edit_buku?id=" + bukus.id_buku + "'>Lihat</a></td>";
+                        hasilBuku += "<td><a class='btn btn-warning py-2 px-3 editBuku' id='editBuku' data-id='"+bukus.id_buku+"' data-bs-toggle='modal' data-bs-target='#modalEditBuku' href='index.php?halaman=edit_buku?id=" + bukus.id_buku + "'>Edit</a> | <a class='btn btn-info py-2 px-3' id='lihatBuku' data-id='"+buku.id_buku+"' data-bs-toggle='modal' data-bs-target='#modalLihatBuku' href='index.php?halaman=edit_buku?id=" + bukus.id_buku + "'>Lihat</a></td>";
                         hasilBuku += "</tr>";
                     });
                     $("#table-buku tbody").html(hasilBuku);

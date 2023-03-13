@@ -1,0 +1,2 @@
+RewriteRule ^([a-z]+)$ index.php?p=$1
+RewriteRule ^([0-9]+)/?$ index.php?search=$1 [NC,L]

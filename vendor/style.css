@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+}
+
+#search-form {
+    width: 30%;
+}
+.charcount {
+    color: red !important;
+  }
+@media (max-width:600px) {
+    #search-form {
+        margin-top: 15px;
+        width: 100%;
+    }
+    .button-filter {
+        width: 100%;
+        margin-top: 15px;
+    }
+    .content-data-buku-header {
+     display: block !important;   
+    }
+}

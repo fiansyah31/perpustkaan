@@ -2,7 +2,7 @@ Ini merupakan web perpustakaan untuk latihan rest api dengan php pdo dan ajax jq
 
 Fitur perpustakaan :
 
-Tambah Data Buku
-Edit Data Buku
-Hapus Data Buku
-Pencarian Buku
+- Tambah Data Buku
+- Edit Data Buku
+- Hapus Data Buku
+- Pencarian Buku

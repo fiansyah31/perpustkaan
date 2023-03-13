@@ -1,8 +1,8 @@
-Ini merupakan web latihan rest api dengan php pdo dan ajax jquery.
+Ini merupakan web perpustakaan untuk latihan rest api dengan php pdo dan ajax jquery.
 
-Fitur :
-- Tambah Data
-- Edit Data
-- Hapus Data
-- Pencarian
+Fitur perpustakaan :
+- Tambah Data Buku
+- Edit Data Buku
+- Hapus Data Buku
+- Pencarian Buku
 

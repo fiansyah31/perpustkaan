@@ -51,7 +51,7 @@ function tambahData(){
         var penulis = $("#penulis").val();
 
         $.ajax({
-            url: "http://localhost/belajarkomunikasidatafebe/backend/proses_tambah_buku.php",
+            url: "http://localhost/perpustakaan/backend/proses_tambah_buku.php",
             type: "POST",
             data: {
                 judul: judul,
@@ -91,7 +91,7 @@ function SearchLiveBuku() {
         // console.log(search);
         //kirim request pencarian ke server
         $.ajax({
-            url: "http://localhost/belajarkomunikasidatafebe/backend/cari_buku.php",
+            url: "http://localhost/perpustakaan/backend/cari_buku.php",
             type: "GET",
             dataType: "json",
             data: {
@@ -122,7 +122,7 @@ function SearchLiveBuku() {
      // Mengambil data dari back-end dan menampilkan dalam tabel
      function tampilBuku(){
         $.ajax({
-           url: "http://localhost/belajarkomunikasidatafebe/backend/data_buku.php",
+           url: "http://localhost/perpustakaan/backend/data_buku.php",
            dataType: "json",
            success: function(data) {
                var bukuHTML = "";
@@ -148,7 +148,7 @@ function filterTahun(){
         e.preventDefault();
         var tahun = $("#tahun").val();
         $.ajax({
-            url: "http://localhost/belajarkomunikasidatafebe/backend/filter_buku.php",
+            url: "http://localhost/perpustakaan/backend/filter_buku.php",
             type: "GET",
             dataType: "json",
             data: {tahun: tahun},
@@ -194,7 +194,7 @@ function BatasiKetikan() {
       
         var id = $(this).data('id');
         $.ajax({
-            url: "http://localhost/belajarkomunikasidatafebe/backend/data_buku_id.php?id="+ id +"",
+            url: "http://localhost/perpustakaan/backend/data_buku_id.php?id="+ id +"",
             data: {id : id},
             method: "GET",
             dataType: "json",
@@ -220,7 +220,7 @@ function BatasiKetikan() {
         var penulis = $("#penuliss").val();
 
         $.ajax({
-            url: "http://localhost/belajarkomunikasidatafebe/backend/proses_edit_buku.php",
+            url: "http://localhost/perpustakaan/backend/proses_edit_buku.php",
             method: "POST",
             dataType: "json",
             data: {
@@ -261,7 +261,7 @@ function BatasiKetikan() {
       
         var id = $(this).data('id');
         $.ajax({
-            url: "http://localhost/belajarkomunikasidatafebe/backend/data_buku_id.php?id="+ id +"",
+            url: "http://localhost/perpustakaan/backend/data_buku_id.php?id="+ id +"",
             data: {id : id},
             method: "GET",
             dataType: "json",
@@ -285,7 +285,7 @@ function BatasiKetikan() {
     $("#hapusBuku").click(function(){
         var id =$("#id_bukul").val();
         $.ajax({
-            url: "http://localhost/belajarkomunikasidatafebe/backend/proses_hapus_buku.php",
+            url: "http://localhost/perpustakaan/backend/proses_hapus_buku.php",
             data: {id: id},
             method: "POST",
             dataType: "json",
